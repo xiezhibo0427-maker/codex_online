@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>躲避陨石小游戏</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>🚀 躲避陨石</h1>
+        <p>左右移动飞船，别被陨石砸中！</p>
+      </header>
+
+      <section class="hud">
+        <div>得分：<span id="score">0</span></div>
+        <div>最高分：<span id="best">0</span></div>
+        <button id="restart">重新开始</button>
+      </section>
+
+      <canvas id="game" width="420" height="640" aria-label="game canvas"></canvas>
+
+      <footer>
+        <p>操作方式：← → 或 A / D（手机可拖动底部滑块）</p>
+        <input id="touchControl" type="range" min="0" max="100" value="50" />
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
